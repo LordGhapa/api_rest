@@ -14,7 +14,12 @@ var _userRoutes = require('./routes/userRoutes'); var _userRoutes2 = _interopReq
 var _tokenRoutes = require('./routes/tokenRoutes'); var _tokenRoutes2 = _interopRequireDefault(_tokenRoutes);
 var _fotoRoutes = require('./routes/fotoRoutes'); var _fotoRoutes2 = _interopRequireDefault(_fotoRoutes);
 
-const whiteList = ['http://localhost:3000', 'http://127.0.0.1:5500'];
+const whiteList = [
+  'http://localhost:3000',
+  'http://127.0.0.1:5500',
+  'https://react-sistema-crud.vercel.app/',
+  'https://sweet-profiterole-9cbb20.netlify.app/',
+];
 const corsOptions = {
   origin(origin, callback) {
     if (whiteList.indexOf(origin) !== -1 || !origin) {
