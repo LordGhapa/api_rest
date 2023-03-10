@@ -15,13 +15,16 @@ var _tokenRoutes = require('./routes/tokenRoutes'); var _tokenRoutes2 = _interop
 var _fotoRoutes = require('./routes/fotoRoutes'); var _fotoRoutes2 = _interopRequireDefault(_fotoRoutes);
 
 const whiteList = [
-  'http://localhost:3000'];
+  'http://localhost:3000',
+  'https://react-crud-orcin-omega.vercel.app',
+  'https://react-sistema-crud-with-img.vercel.app/',
+];
 const corsOptions = {
   origin(origin, callback) {
     if (whiteList.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
-      callback(new Error('not allow by CORS'));
+      callback(new Error('Não permitido pelo CORS not allow by CORS'));
     }
   },
 };
