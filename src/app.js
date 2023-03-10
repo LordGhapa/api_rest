@@ -15,11 +15,7 @@ import tokenRoutes from './routes/tokenRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
-  'http://localhost:3000',
-  'http://127.0.0.1:5500',
-  'https://react-sistema-crud.vercel.app/',
-  'https://sweet-profiterole-9cbb20.netlify.app/',
-];
+  'http://localhost:3000'];
 const corsOptions = {
   origin(origin, callback) {
     if (whiteList.indexOf(origin) !== -1 || !origin) {
