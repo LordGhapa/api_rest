@@ -2,12 +2,7 @@
   "name": "api",
   "version": 2,
   "public": true,
-  "builds": [
-    {
-      "src": "dist/server.js",
-      "use":"@vercel/node"
-    }
-  ],
+  "builds": [{ "src": "/(.*)", "dest": "/dist/server.js" }],
   "routes": [
     {
       "src": "(.*)",
