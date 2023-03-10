@@ -24,7 +24,7 @@ const corsOptions = {
     if (whiteList.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
-      callback(new Error('Não permitido pelo ||not allow by CORS'));
+      callback(new Error('Não permitido pelo CORS not allow by CORS'));
     }
   },
 };
