@@ -16,7 +16,8 @@ import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
   'http://localhost:3000',
-  'https://react-crud-orcin-omega.vercel.app/',
+  'https://react-crud-orcin-omega.vercel.app',
+  'https://react-sistema-crud-with-img.vercel.app/',
 ];
 const corsOptions = {
   origin(origin, callback) {
